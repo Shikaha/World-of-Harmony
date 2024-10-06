@@ -1,0 +1,61 @@
+body {
+  overflow: hidden; /* Disable both vertical and horizontal scroll */
+  margin: 0; /* Remove any default margin */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background: transparent; /* Прозрачный фон */
+  border: 2px solid #074f86; /* Синяя рамка */
+  color: #ffffff; /* Цвет текста в тон рамке */
+  padding: 15px 32px; /* Внутренние отступы */
+  text-align: center; /* Выравнивание текста */
+  text-decoration: none; /* Без подчеркивания */
+  display: inline-block; /* Инлайн-блок */
+  font-size: 15px; /* Размер шрифта */
+  margin: 4px 2px; /* Внешние отступы */
+  cursor: pointer; /* Курсор "указатель" при наведении */
+  border-radius: 12px; /* Скругленные углы */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход цвета */
+}
+#regionWindow {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 5px; /* Внутренние отступы */
+  width: 200px; /* Ширина окна */
+  height: auto; /* Высота окна */
+  background: transparent;
+  border: 2px solid #074f86; /* Ширина и цвет рамки */
+  border-radius: 12px; /* Скругленные углы рамки */
+  display: flex;
+  flex-direction: column; /* Расположение кнопок по вертикали */
+  gap: 1px; /* Отступы между кнопками */
+  opacity: 0; /* Изначальная прозрачность */
+  transition: opacity 0.5s ease; /* Плавный переход прозрачности */
+  visibility: hidden; /* Изначально скрыто */
+}
+
+/* Стили при наведении */
+button:hover {
+  background-color: #dea010; /* Синий цвет при наведении */
+  color: white; /* Белый цвет текста при наведении */
+}
+button {
+  color: #ffffff; /* Цвет текста кнопок */
+}
+
+/* Для окна с информацией */
+div {
+  color: #ffffff; /* Цвет текста в окне */
+}
+
+
+/* Стили при фокусе */
+button:focus {
+  outline: none; /* Убираем обводку при фокусе */
+}
